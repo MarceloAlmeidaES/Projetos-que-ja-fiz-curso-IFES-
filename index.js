@@ -28,7 +28,7 @@ app.post("/addfornecedor", function(req, res) {
 		res.render('sucessoFornecedor');
 	});
 });
-app.listen(porta, () => {
+app.listen(process.env.PORT || porta, () => {
 	console.log("Servidor rodando");
 });
 
